@@ -1,0 +1,10 @@
+.header {
+    background-color: white; /* Ensures text doesn't bleed through when scrolling */
+    z-index: 10;
+}
+
+.main-body {
+    /* Ensure content is easy to read */
+    line-height: 1.6;
+    color: #333;
+}

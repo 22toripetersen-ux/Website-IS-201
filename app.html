@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creole Word Game</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; background: #333; color: white; padding: 50px; }
+        .game-card { background: #444; padding: 40px; border-radius: 20px; display: inline-block; border: 3px solid #ffcc00; }
+        button { background: #ffcc00; border: none; padding: 10px 20px; font-weight: bold; cursor: pointer; border-radius: 5px; }
+        #result { margin-top: 20px; font-size: 1.2em; color: #00ffcc; }
+    </style>
+</head>
+<body>
+    <div class="game-card">
+        <h1>Creole Riddle Master</h1>
+        <p id="question">Click the button for a riddle!</p>
+        <button onclick="reveal()">Show Answer</button>
+        <button onclick="next()">Next Riddle</button>
+        <div id="result"></div>
+        <br><br>
+        <a href="scratch.html" style="color: white;">Return to Scratch Page</a>
+    </div>
+
+    <script>
+        const gameData = [
+            {q: "I speak every language but have no mouth. What am I?", a: "An Echo (Eko)"},
+            {q: "What goes up but never comes down?", a: "Your Age (Laj)"},
+            {q: "I have a heart that doesn't beat. What am I?", a: "An Artichoke / Cabbage"}
+        ];
+        let current = 0;
+        function reveal() { document.getElementById('result').innerText = gameData[current].a; }
+        function next() {
+            current = (current + 1) % gameData.length;
+            document.getElementById('question').innerText = gameData[current].q;
+            document.getElementById('result').innerText = "";
+        }
+    </script>
+</body>
+</html>

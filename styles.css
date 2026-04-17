@@ -1,0 +1,12 @@
+/* Update this in styles.css */
+.home-bg {
+    background-image: url('photo.jpeg'); /* Removed the ../ */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.footer-style {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
