@@ -3,21 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>Scratch Page | Haitian Culture</title>
-    <link rel="stylesheet" href="styles/scratch-styles.css">
+    <style>
+        body {
+            /* This sets a nice deep "Haitian Blue" background */
+            background-color: #002D62; 
+            color: #333; /* Dark text for readability in the white boxes */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            text-align: center;
+            border-bottom: 3px solid #D21034; /* Haitian Red accent */
+        }
+
+        /* This makes your content look like "cards" on top of the blue background */
+        #header-box, #content-box, #tableau-section {
+            background-color: white;
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+        }
+
+        h1, h2, h3 {
+            color: #002D62;
+        }
+
+        img {
+            border: 5px solid #eee;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-    <nav class="nav-container" style="padding: 20px; background-color: #f8f9fa;">
+    <nav class="nav-container">
         <a href="index.html">Back to Professional Site</a> | 
         <a href="app.html">AI Riddle Game</a>
     </nav>
 
-    <div id="header-box" style="padding: 40px; text-align: center;">
+    <div id="header-box">
         <h1 id="top">The Beauty of Haiti</h1>
         <p>A scratch page exploring the language and culture I love.</p>
-        <a href="#tableau-section">Jump to Data & Video</a> 
+        <a href="#tableau-section" style="color: #D21034; font-weight: bold;">Jump to Data & Video</a> 
     </div>
 
-    <div id="content-box" style="padding: 20px;">
+    <div id="content-box">
         <h2>Language Structure</h2>
         <ol>
             <li>Creole Origins
@@ -28,8 +64,8 @@
             </li>
             <li>Key Phrases
                 <ul>
-                    <li>Sak Pase? (What's happening?)</li>
-                    <li>N'ap boule. (We're hanging in there.)</li>
+                    <li><strong>Sak Pase?</strong> (What's happening?)</li>
+                    <li><strong>N'ap boule.</strong> (We're hanging in there.)</li>
                 </ul>
             </li>
         </ol>
@@ -37,18 +73,16 @@
         <img src="photo.jpeg" alt="Tori Petersen" width="300">
     </div>
 
-    <hr>
-
-    <div id="tableau-section" style="padding: 20px; text-align: center;">
+    <div id="tableau-section">
         <h2>Data & Media</h2>
         
-        <div style="margin-bottom: 40px;">
+        <div style="margin-bottom: 40px; text-align: center;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/iyfq-9S1F2o?start=2258" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
         </div>
 
         <h3>Interactive Tableau Graph: Creole Words</h3>
         
-        <div id="vizContainer" style="width: 100%; max-width: 800px; height: 650px; margin: 0 auto; border: 1px solid #ddd;">
+        <div id="vizContainer" style="width: 100%; height: 650px; margin: 0 auto;">
             <div class="tableauPlaceholder" id="viz_creole_final" style="position: relative;">
                 <object class="tableauViz" style="display:none;">
                     <param name="host_url" content="https%3A%2F%2Fpublic.tableau.com%2F" />
@@ -72,6 +106,8 @@
         </div>
     </div>
 
-    <p style="text-align: center; margin-top: 50px;"><a href="#top">Back to Top</a></p>
+    <p style="text-align: center; padding-bottom: 40px;">
+        <a href="#top" style="color: white; text-decoration: none; font-weight: bold;">↑ Back to Top</a>
+    </p>
 </body>
 </html>
