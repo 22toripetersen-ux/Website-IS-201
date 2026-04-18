@@ -40,35 +40,31 @@
     <div id="tableau-section">
         <h2>Data & Media</h2>
         
-        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=iyfq-9S1F2o&t=2258s" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iyfq-9S1F2o?start=2258" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
         <h3>Interactive Tableau Graph</h3>
         
-        <div id="vizContainer" style="width: 100%; height: 700px; border: 1px solid #ccc; margin-top: 20px;">
-            <div class="tableauPlaceholder" id="viz123" style="position: relative;">
-                <object class="tableauViz" style="display:none;">
-                    <param name="host_url" content="https%3A%2F%2Fpublic.tableau.com%2F" />
-                    <param name="embed_code_version" content="3" />
-                    <param name="site_root" content="" />
-                    <param name="name" content="HaitiEarthquakeImpact/Dashboard" />
-                    <param name="tabs" content="no" />
-                    <param name="toolbar" content="yes" />
-                    <param name="animate_transition" content="yes" />
-                    <param name="display_static_image" content="yes" />
-                    <param name="display_spinner" content="yes" />
-                    <param name="display_overlay" content="yes" />
-                    <param name="display_count" content="yes" />
-                    <param name="language" content="en-US" />
+        <div style="width: 100%; height: 650px; overflow: visible; margin-top: 20px; border: 1px solid #eee;">
+            <div class='tableauPlaceholder' id='viz_haiti_final' style='position: relative'>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' content='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                    <param name='embed_code_version' content='3' /> 
+                    <param name='site_root' content='' />
+                    <param name='name' content='HaitiEarthquakeImpact&#47;Dashboard' />
+                    <param name='tabs' content='no' />
+                    <param name='toolbar' content='yes' />
+                    <param name='static_image' content='yes' />
+                    <param name='language' content='en-US' />
                 </object>
             </div>
-            <script type="text/javascript">
-                var divElement = document.getElementById('viz123');
-                var vizElement = divElement.getElementsByTagName('object')[0];
-                vizElement.style.width = '100%';
-                vizElement.style.height = '650px';
-                var scriptElement = document.createElement('script');
-                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            <script type='text/javascript'>                    
+                var divElement = document.getElementById('viz_haiti_final');                    
+                var vizElement = divElement.getElementsByTagName('object')[0];                    
+                vizElement.style.width='100%';
+                vizElement.style.height='600px';                    
+                var scriptElement = document.createElement('script');                    
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
             </script>
         </div>
     </div>
