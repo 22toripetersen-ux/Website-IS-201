@@ -5,22 +5,18 @@
     <title>Scratch Page | Haitian Culture</title>
     <style>
         body {
-            /* This sets a nice deep "Haitian Blue" background */
             background-color: #002D62; 
-            color: #333; /* Dark text for readability in the white boxes */
+            color: #333;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
-
         .nav-container {
             background-color: rgba(255, 255, 255, 0.9);
             padding: 15px;
             text-align: center;
-            border-bottom: 3px solid #D21034; /* Haitian Red accent */
+            border-bottom: 3px solid #D21034;
         }
-
-        /* This makes your content look like "cards" on top of the blue background */
         #header-box, #content-box, #tableau-section {
             background-color: white;
             width: 80%;
@@ -30,15 +26,7 @@
             border-radius: 15px;
             box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
         }
-
-        h1, h2, h3 {
-            color: #002D62;
-        }
-
-        img {
-            border: 5px solid #eee;
-            border-radius: 8px;
-        }
+        h1, h2, h3 { color: #002D62; }
     </style>
 </head>
 <body>
@@ -50,61 +38,48 @@
     <div id="header-box">
         <h1 id="top">The Beauty of Haiti</h1>
         <p>A scratch page exploring the language and culture I love.</p>
-        <a href="#tableau-section" style="color: #D21034; font-weight: bold;">Jump to Data & Video</a> 
     </div>
 
     <div id="content-box">
         <h2>Language Structure</h2>
-        <ol>
-            <li>Creole Origins
-                <ul>
-                    <li>French Influence</li>
-                    <li>West African Roots</li>
-                </ul>
-            </li>
-            <li>Key Phrases
-                <ul>
-                    <li><strong>Sak Pase?</strong> (What's happening?)</li>
-                    <li><strong>N'ap boule.</strong> (We're hanging in there.)</li>
-                </ul>
-            </li>
-        </ol>
-
         <img src="photo.jpeg" alt="Tori Petersen" width="300">
     </div>
 
     <div id="tableau-section">
         <h2>Data & Media</h2>
-        
         <div style="margin-bottom: 40px; text-align: center;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/iyfq-9S1F2o?start=2258" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
         </div>
 
-        <h3>Interactive Tableau Graph: Creole Words</h3>
+        <h3>Interactive Data Visualization</h3>
         
-        <div id="vizContainer" style="width: 100%; height: 650px; margin: 0 auto;">
-            <div class="tableauPlaceholder" id="viz_creole_final" style="position: relative;">
+        <div id="vizContainer" style="width: 100%; height: 650px; overflow: visible;">
+            <div class="tableauPlaceholder" id="viz12345" style="position: relative; width: 100%; height: 600px;">
                 <object class="tableauViz" style="display:none;">
-                    <param name="host_url" content="https%3A%2F%2Fpublic.tableau.com%2F" />
-                    <param name="embed_code_version" content="3" />
-                    <param name="site_root" content="" />
-                    <param name="name" content="Creolewords/Sheet22" />
-                    <param name="tabs" content="no" />
-                    <param name="toolbar" content="yes" />
+                    <param name="host_url" content="https%3A%2F%2Fpublic.tableau.com%2F" /> 
+                    <param name="embed_code_version" content="3" /> 
+                    <param name="path" content="shared/QYKSTS22N" /> <param name="toolbar" content="yes" />
                     <param name="static_image" content="yes" />
+                    <param name="animate_transition" content="yes" />
+                    <param name="display_static_image" content="yes" />
+                    <param name="display_spinner" content="yes" />
+                    <param name="display_overlay" content="yes" />
+                    <param name="display_count" content="yes" />
+                    <param name="language" content="en-US" />
                 </object>
             </div>
-            <script type="text/javascript">
-                var divElement = document.getElementById('viz_creole_final');
-                var vizElement = divElement.getElementsByTagName('object')[0];
-                vizElement.style.width = '100%';
-                vizElement.style.height = '600px';
-                var scriptElement = document.createElement('script');
-                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                vizElement.parentNode.insertBefore(scriptElement, vizElement);
-            </script>
         </div>
     </div>
+
+    <script type="text/javascript">
+        var divElement = document.getElementById('viz12345');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width='100%';
+        vizElement.style.height='600px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
 
     <p style="text-align: center; padding-bottom: 40px;">
         <a href="#top" style="color: white; text-decoration: none; font-weight: bold;">↑ Back to Top</a>
