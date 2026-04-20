@@ -1,4 +1,75 @@
-<div id="tableau-section">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scratch Page | Haitian Culture</title>
+    <style>
+        body {
+            background-color: #002D62; /* Haitian Blue */
+            color: #333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            text-align: center;
+            border-bottom: 3px solid #D21034; /* Haitian Red */
+        }
+        .nav-container a {
+            color: #002D62;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+        #header-box, #content-box, #tableau-section {
+            background-color: white;
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+        }
+        h1, h2, h3 { color: #002D62; }
+        .accent-text { color: #D21034; font-weight: bold; }
+        img { border-radius: 8px; border: 4px solid #eee; margin-top: 15px; }
+    </style>
+</head>
+<body>
+    <nav class="nav-container">
+        <a href="index.html">Back to Professional Site</a> | 
+        <a href="app.html">AI Riddle Game</a>
+    </nav>
+
+    <div id="header-box">
+        <h1 id="top">The Beauty of Haiti</h1>
+        <p>A scratch page exploring the language and culture I love.</p>
+        <a href="#tableau-section" class="accent-text">Jump to Data & Video</a> 
+    </div>
+
+    <div id="content-box">
+        <h2>Language Structure</h2>
+        <ol>
+            <li>Creole Origins
+                <ul>
+                    <li>French Influence</li>
+                    <li>West African Roots</li>
+                </ul>
+            </li>
+            <li>Key Phrases
+                <ul>
+                    <li><span class="accent-text">Sak Pase?</span> (What's happening?)</li>
+                    <li><span class="accent-text">N'ap boule.</span> (We're hanging in there.)</li>
+                </ul>
+            </li>
+        </ol>
+
+        <img src="photo.jpeg" alt="Tori Petersen" width="300">
+    </div>
+
+    <div id="tableau-section">
         <h2>Data & Media</h2>
         
         <div style="margin-bottom: 40px; text-align: center;">
@@ -7,7 +78,7 @@
 
         <h3>Interactive Data Visualization: Creole Words</h3>
         
-        <div style="width: 100%; max-width: 800px; height: 650px; margin: 0 auto; border: 1px solid #eee; border-radius: 10px; overflow: hidden;">
+        <div style="width: 100%; max-width: 800px; height: 650px; margin: 0 auto; overflow: hidden;">
             <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
             <tableau-viz id="tableauViz" 
                 src="https://public.tableau.com/views/Creolewords/Sheet22" 
@@ -16,3 +87,9 @@
             </tableau-viz>
         </div>
     </div>
+
+    <p style="text-align: center; padding-bottom: 40px;">
+        <a href="#top" style="color: white; text-decoration: none; font-weight: bold;">↑ Back to Top</a>
+    </p>
+</body>
+</html>
